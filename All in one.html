@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPIDEY TOOLKIT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #0a0a0a;
+            overflow-y: auto;
+            color: #fff;
+            min-height: 100vh;
+        }
+        
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 450px;
+            margin: 70px auto;
+            background: rgba(0, 0, 0, 0.85);
+            border: 2px solid #d66efd;
+            border-radius: 18px;
+            padding: 30px 25px;
+            box-shadow: 0 0 40px #d66efd;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                transform: translateY(-40px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        h1 {
+            color: #d66efd;
+            font-size: 32px;
+            text-shadow: 0 0 10px #d66efd, 0 0 20px #d66efd;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 15px;
+            color: #ccc;
+            margin-bottom: 25px;
+        }
+        
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 10px 0;
+            padding: 14px 20px;
+            border: 2px solid #d66efd;
+            background: transparent;
+            color: #d66efd;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px transparent;
+        }
+        
+        .btn:hover {
+            background: linear-gradient(to right, #8000ff, #d66efd);
+            color: #fff;
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #d66efd;
+        }
+        
+        .btn i {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            margin-top: 25px;
+        }
+    </style>
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <canvas id="bg"></canvas>
+
+
+    <div class="container">
+        <h1>🕷️ Spidey Toolkit</h1>
+
+        <div class="subtitle">Welcome to the SPIDEY All In One Toolkit</div>
+
+
+
+
+        <a href="https://drive.google.com/drive/folders/1z36cdhxYYCezNZ9TFpPbGPst5AwR8-aH" class="btn">🎬 Anime Reels Bundle</a>
+        <a href="https://drive.google.com/drive/folders/1jgJCDaqDNrPi3bHLUnFJ7-D7U7X0cTzr" class="btn">🔊 Sound Effects Pack</a>
+        <a href="https://drive.google.com/drive/folders/1t0WS6CQKcAdY5tVlK4SFUqCScGmd0oV-" class="btn">👨‍💻 AI Guy Academy Courses</a>
+        <a href="https://drive.google.com/drive/folders/1M6RA7ZQzkG27yOY47_7wCYiwr2LgsJ3A" class="btn">📦 Biggest Pack</a>
+        <a href="https://drive.google.com/drive/folders/1FCNFECNhIwKL4YXhAhEbmoRh4pLl1Rbz?usp=sharing" class="btn">🎁 10 Million Digital Products</a>
+        <a href="https://drive.google.com/drive/folders/1QDTwtGq5oyj4UcTEUnWsOodDuwXMG7XB?usp=drive_link" class="btn">📹 Saqlain Khan YT Course</a>
+        <a href="https://drive.google.com/drive/folders/1ki13PQdevvmNdMeZNO3AR2NHbJbvltaE?usp=sharing" class="btn">📒 Saqlain Khan YT Playbook</a>
+        <a href="https://drive.google.com/drive/folders/1A3N2oHrfm5LgHgBbNbTm2wMhSLbxHseL?usp=sharing" class="btn">🎓 6TB Courses</a>
+        <a href="https://drive.google.com/drive/folders/1A3N2oHrfm5LgHgBbNbTm2wMhSLbxHseL?usp=sharing" class="btn">💾 6TB Software</a>
+        <a href="https://drive.google.com/drive/folders/1kXl2kxtrbliY7QRQKzcU0OIQ4i8_5ybo?usp=sharing" class="btn">📚 500+ Courses</a>
+        <a href="https://drive.google.com/drive/folders/1CgN7DE3pNRNh_4BA_zrrMLqWz6KquwuD" class="btn">📚 Courses Bundle</a>
+        <a href="https://drive.google.com/drive/folders/1CuGAnyFq1tjZavLIyJPfSDFZCqNYxfAN" class="btn">👕 100K+ T-Shirt Designs</a>
+        <a href="https://drive.google.com/drive/folders/10ZUJ9QlTfz8pj2k5_Pcu-ENYNxs5mQ99" class="btn">📱 30K+ Social Media Posts</a>
+        <a href="https://drive.google.com/drive/folders/1U7-Enp0EaZ19nyI2RclV0P-MSnmtm1PG" class="btn">🔠 25K+ Premium Fonts</a>
+        <a href="https://drive.google.com/drive/folders/1jV3JZMJ8TVMy3-T0q14tjLU49xyfYwDc" class="btn">🛒 100+ Shopify Themes</a>
+        <a href="https://drive.google.com/drive/folders/1ZvgfzX1i0njIjp_5cRFk1ftbpIvkojYv?usp=sharing" class="btn">📚 9TB Courses</a>
+        <a href="https://drive.google.com/drive/folders/1FM6KbawJxnE6Vpa9ehKV0LE4SidGLhQ2" class="btn">📄 Sales Templates</a>
+        <a href="https://drive.google.com/drive/folders/1nb5fWjadMCVbfR_IXP4_1OzCoF3rc24" class="btn">🎓 3TB Courses</a>
+        <a href="https://drive.google.com/drive/folders/1Spi0dNvfqyejTyNXNMs1EJVjxEQn_5tF" class="btn">💌 Wedding Invitations</a>
+        <a href="https://drive.google.com/file/d/1vRtHcwRGBOCNNEQNGM1i1vJ9AbOsdPQr" class="btn">🎨 100GB+ Graphics</a>
+        <a href="https://drive.google.com/file/d/1747_uZwS29SmfFuIgTfsU3H9HWIZXJIU" class="btn">🤖 15K+ ChatGPT Prompts</a>
+        <a href="https://drive.google.com/drive/folders/1ZFRE30Q5jekiPSPBlGBuUMvZKvJDeXkV" class="btn">🎞️ 25GB Editing Pack</a>
+        <a href="https://drive.google.com/drive/folders/1Q6IEcmyF1YcDo1d-qlBzpmK92R68CCjW" class="btn">🔧 Atom X Pack</a>
+        <a href="https://drive.google.com/drive/folders/1tYBdoT3fyyCA7cx9a0itJQYQ44qPKcOU" class="btn">🖥️ Adobe Activated Software</a>
+        <a href="https://drive.google.com/drive/folders/1_jZ9_JJlnNkNx8MVggvadiv_5qXYjF3O?usp=sharing" class="btn">🎨 Biggest Designer Pack</a>
+        <a href="https://drive.google.com/file/d/1qcIzCD-wpcto41A1J2ca_-mSfSe9t26x/view?usp=drivesdk" class="btn">📞 Pakistani DB</a>
+        <a href="https://drive.google.com/drive/folders/1smlMGUGTAyJWurelZHHyMHHfTQwz8udy?usp=drive_link" class="btn">🎥 Motion Pro Bundle</a>
+        <a href="https://drive.google.com/drive/folders/1vrstCe9od_c2AZGf0VU52fsqlY92EvWG" class="btn">🖥️ Activated PC Software</a>
+        <a href="https://drive.google.com/drive/folders/1Qx71H1sXgbOXaqNavmsAYL_jkT_Nzstt?usp=sharing" class="btn">🌐 3000+ WP Themes</a>
+        <a href="https://drive.google.com/drive/folders/1YcKs-KDLW45K2-qwpkTs5lkgAEtmcPEB" class="btn">📦 All in One Pack</a>
+        <a href="https://drive.google.com/drive/folders/10hJsjQ4PMxv1CAbw8EOahjexU7f9f6Oi" class="btn">🎞️ 60GB Editing Pack</a>
+        <a href="https://drive.google.com/drive/folders/1nt5d6bKEApAr2PXI8FzcRGTlpKN6ZTRz" class="btn">🤖 500 AI Reels</a>
+        <a href="https://drive.google.com/file/d/1qcIzCD-wpcto41A1J2ca_-mSfSe9t26x/view?usp=drivesdk" class="btn">📞 1 Million Numbers</a>
+        <a href="https://drive.google.com/drive/folders/1Bmn6LWj75C1bfMNGh8pymh5deoIbh-V2?usp=sharing" class="btn">🔥 AI Motivation Reels</a>
+        <a href="https://drive.google.com/drive/folders/1-49JZD6wY2qG929fJo-aS47WsaPtvdFh?usp=sharing" class="btn">💽 1000TB Data</a>
+        <a href="https://drive.google.com/drive/folders/1FCNFECNhIwKL4YXhAhEbmoRh4pLl1Rbz?usp=sharing" class="btn">💽 1000TB Data Collection</a>
+        <a href="https://www.up-4ever.net/users/majidkhanmohmand/" class="btn">🛠️ Premium Tools</a>
+        <a href="https://drive.google.com/drive/folders/1ZvgfzX1i0njIjp_5cRFk1ftbpIvkojYv?usp=sharing" class="btn">🖥️ 8TB Data Pack</a>
+        <a href="https://drive.google.com/drive/folders/1QANjhIDgvlrYAZxQvf2TY6AGXpgZawkG?usp=sharing" class="btn">🎬 200GB Editing Pack</a>
+        <a href="https://drive.google.com/drive/folders/1Yh-MjX3jzKoPDoy6WxMtU9EM8rZKrOl_" class="btn">📚 1000GB Udemy Courses</a>
+        <a href="https://drive.google.com/drive/folders/1oVtQieUPgGQzhmAe1vBtST_nepgE3Pd-" class="btn">🗺️ Map Assets</a>
+        <a href="https://drive.google.com/drive/folders/1tOiXeD13qPr5yl3PT7w9hl0ZHUZPJsl3" class="btn">🔘 Icons Collection</a>
+        <a href="https://drive.google.com/drive/folders/1v8wcoLtmt9JppjiLd0r0FOikCkk9m4rV" class="btn">✨ Animated Icons</a>
+        <a href="https://drive.google.com/drive/folders/1uZPahmTE6Senun4UJdgEoASIq_otLxS-" class="btn">🔥 Animated Logos</a>
+        <a href="https://drive.google.com/drive/folders/1y5PRTp9hnMB1z2PsUMk1zdVadiKSIJkV" class="btn">😂 Popular Memes</a>
+        <a href="https://drive.google.com/drive/folders/1ieQn_lBPGmm1OWhMYl98zHVtSr6l9rcy" class="btn">📊 1000 Excel Templates</a>
+        <a href="https://drive.google.com/drive/folders/1kXl2kxtrbliY7QRQKzcU0OIQ4i8_5ybo?usp=sharing" class="btn">🎓 500+ Courses</a>
+        <a href="https://drive.google.com/drive/folders/1BEnDAODkvLSoKnW3rRmN89E9wV6fUplS" class="btn">💽 100TB Data Bundle</a>
+        <a href="https://drive.google.com/drive/folders/1fWxos12AZvnqI-r2LyLl-rGQFv3VkRCB" class="btn">📦 Mega Bundle</a>
+        <a href="https://drive.google.com/drive/folders/1jveLgfIDili9OmIpn9AE8_e2dT4lh9IX" class="btn">🎥 Motivational Reels</a>
+        <a href="https://drive.google.com/drive/folders/1FsEkANYS320XXtiGYCSkvuC3ba97BcJN" class="btn">🎬 Editing Courses</a>
+        <a href="https://drive.google.com/file/d/1Ugj645UTbe_75cNfbMn7W8GBUmH1yZq9/view?usp=sharing" class="btn">📖 100GB Ebooks</a>
+        <a href="https://drive.google.com/drive/folders/1nb5fWjadMCVbfR_IXP4_1OzCoF3rc24F?usp=sharing" class="btn">💾 3TB Data Backup</a>
+        <a href="https://drive.google.com/drive/folders/1JkDBqy9c7TVCBjq5ua7JrOsazN4heBJ6?usp=sharing" class="btn">🎨 Adobe Activated Software</a>
+        <a href="https://drive.google.com/drive/folders/12P4iTq7ol8GPu72dnas-KbSXfr56aKJE" class="btn">🛠️ Digital Pack</a>
+        <a href="https://drive.google.com/drive/folders/1nxs_4cpy4t46wEEa2dCY2PUgC8pCtuvZ?usp=sharing" class="btn">🎞️ Editing Pack</a>
+        <a href="https://drive.google.com/drive/folders/1w1s7dyddloz8u2ASvbxYvXhGHnbxXKhJ" class="btn">🎁 200GB Assets</a>
+        <a href="https://t.me/AHM7TECH/2932" class="btn">🎁 15 Million Digital Products</a>
+        <a href="https://drive.google.com/drive/folders/1oXG7hX1fC_HtgNAPOzVJqW0j9C0WCyAQ?usp=sharing" class="btn">💾 100TB Amazing Data</a>
+        <a href="https://drive.google.com/drive/folders/1XpudaJUOF_OYkvFZnFkHyYOWP7_7bZlh" class="btn">👨‍🎨 5000+ Character Animations</a>
+        <a href="https://drive.google.com/drive/folders/1dC0GB9vDkJEUOscgOTDiEHZj-_5SHh0t" class="btn">🎓 All Editing Courses</a>
+        <a href="https://drive.google.com/drive/folders/1yEVIEwCt3GZGN5uy08cvqXRkz0jaL2gP?usp=drive_link" class="btn">🎁 All In One</a>
+        <a href="https://drive.google.com/drive/folders/1oVtQieUPgGQzhmAe1vBtST_nepgE3Pd-" class="btn">🗺️ Map Assets</a>
+        <a href="https://drive.google.com/drive/folders/1y5PRTp9hnMB1z2PsUMk1zdVadiKSIJkV" class="btn">😂 Meme Video Bundle</a>
+        <a href="https://drive.google.com/drive/folders/1ezDZ3uDplBOjbuBGw1qxzzD64tiXhtD" class="btn">🖥️ Freelancing Courses</a>
+        <a href="https://docs.google.com/spreadsheets/d/1mlBVi2mV19v4V1VJt0PBf7uJygWb3UO1Lpca2tGDLfw/edit?usp=sharing" class="btn">🎓 800 Premium Courses</a>
+        <a href="https://drive.google.com/drive/folders/1JPEeb1PuVcvyFpQTnJ04EEiAtFSvG9q6" class="btn">🛒 E-Commerce Bundle</a>
+        <a href="https://drive.google.com/drive/folders/1-Fs4KSffFLTdP77_snzZDDYYvLyhyj3_" class="btn">💾 500TB Data</a>
+        <a href="https://t.me/nabesofhacks/8533" class="btn">💡 Ultimate Digital Bundle</a>
+        <a href="https://drive.google.com/file/d/1qcIzCD-wpcto41A1J2ca_-mSfSe9t26x/view?usp=drivesdk" class="btn">📞 Pakistani Number Database</a>
+        <a href="https://drive.google.com/drive/folders/1Bmn6LWj75C1bfMNGh8pymh5deoIbh-V2?usp=sharing" class="btn">💪 AI Motivation Reels</a>
+        <a href="https://docs.google.com/spreadsheets/d/1bCz5Wnt_dS1-3D2SJ7y5kb3pXa2NXf0lhljgXHfec2E/edit?usp=sharing" class="btn">📄 15K+ Prompt Collection</a>
+        <a href="https://drive.google.com/drive/u/0/mobile/folders/1CgN7DE3pNRNh_4BA_zrrMLqWz6KquwuD?fbclid=IwZXh0bgNhZW0CMTEAAR3_YadVH1AhVNs6CzWgPHwZ_9tMtMH0oH1o3eY7xwF8tM6WvLyK2LOL1Ds_aem_1hCjtH582YL0Gx8t-lHWNw" class="btn">🎓 60GB Free Courses</a>
+        <a href="https://drive.google.com/drive/folders/1CuGAnyFq1tjZavLIyJPfSDFZCqNYxfAN" class="btn">👕 100K+ T-Shirt Designs</a>
+        <a href="https://drive.google.com/drive/folders/10ZUJ9QlTfz8pj2k5_Pcu-ENYNxs5mQ99" class="btn">📱 30K+ Social Media Posts</a>
+        <a href="https://drive.google.com/drive/folders/1U7-Enp0EaZ19nyI2RclV0P-MSnmtm1PG" class="btn">🔠 25K+ Premium Fonts</a>
+        <a href="https://drive.google.com/drive/folders/1jV3JZMJ8TVMy3-T0q14tjLU49xyfYwDc" class="btn">🛍️ 100+ Shopify Themes</a>
+        <a href="https://drive.google.com/drive/folders/1FM6KbawJxnE6Vpa9ehKV0LE4SidGLhQ2" class="btn">📑 Sales Message Templates</a>
+        <a href="https://drive.google.com/drive/folders/1Spi0dNvfqyejTyNXNMs1EJVjxEQn_5tF" class="btn">💌 Wedding Invitations Cards</a>
+        <a href="https://drive.google.com/file/d/1R2Gib4CVxEooVtfRywJJap0b7RWivJg5/view?usp=sharing" class="btn">🎨 100GB Graphics Bundle</a>
+        <a href="https://drive.google.com/drive/folders/1qGKydNjo4wO9JcL2WMsY5yAOLnI7Hclc" class="btn">📦 12GB Editing Pack</a>
+        <a href="https://drive.google.com/drive/folders/1tmPdr7NQIeQnZPhX84lGB_v--szudW7F" class="btn">📸 Thumbnail Assets</a>
+        <a href="https://drive.google.com/drive/folders/18X7m4uKK8aEAS2MFPE9zdv-iiFJrqePg" class="btn">🎓 8300 Paid Courses</a>
+        <a href="https://drive.google.com/drive/folders/1RRgWN6UTTNb0fWBXjOwcbjW3i-ntGv4a" class="btn">🎯 Atom X Full Pack</a>
+        <a href="https://drive.google.com/drive/folders/1kXl2kxtrbliY7QRQKzcU0OIQ4i8_5ybo?usp=sharing" class="btn">🎓 500+ Courses Again</a>
+        <a href="https://drive.google.com/drive/folders/17QO5QwNvH7iqnURE_gba9JIvKhuGEAzQ" class="btn">🎁 Mega Bundle</a>
+
+        <div class="footer">
+            &copy; 2025 Spidey Toolkit - Powered by NAIN 💜
+        </div>
+    </div>
+
+
+
+
+    <script>
+        const canvas = document.getElementById("bg");
+        const ctx = canvas.getContext("2d");
+
+        canvas.height = window.innerHeight;
+        canvas.width = window.innerWidth;
+
+        const matrix = "01";
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+        const drops = Array.from({
+            length: columns
+        }).fill(1);
+
+        function draw() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.07)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = "#d66efd";
+            ctx.font = fontSize + "px monospace";
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = matrix[Math.floor(Math.random() * matrix.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+
+        setInterval(draw, 35);
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+
+</body>
+
+</html>

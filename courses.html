@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NAIN TOOLKIT - GLOW EDITION</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0a0a0a;
+      overflow-y: auto;
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 450px;
+      margin: 70px auto;
+      background: rgba(0, 0, 0, 0.85);
+      border: 2px solid #d66efd;
+      border-radius: 18px;
+      padding: 30px 25px;
+      box-shadow: 0 0 40px #d66efd;
+      text-align: center;
+      animation: fadeIn 1s ease-out;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        transform: translateY(-40px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      color: #d66efd;
+      font-size: 32px;
+      text-shadow: 0 0 10px #d66efd, 0 0 20px #d66efd;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      color: #ccc;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 10px 0;
+      padding: 14px 20px;
+      border: 2px solid #d66efd;
+      background: transparent;
+      color: #d66efd;
+      border-radius: 12px;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px transparent;
+    }
+
+    .btn:hover {
+      background: linear-gradient(to right, #8000ff, #d66efd);
+      color: #fff;
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #d66efd;
+    }
+
+    .btn i {
+      margin-right: 10px;
+      font-size: 18px;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+      margin-top: 25px;
+    }
+  </style>
+
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+
+<div class="container">
+  <h1>💜 SPIDEY TOOLKIT</h1>
+  <div class="subtitle">Glow Edition - Same Size as Neon Toolkit</div>
+
+  
+  
+    <a href="https://drive.google.com/file/d/1JHiOjkuFPM65iB_UrdH0l2iW-r3JaFhb/view" class="btn">💻 HTML Course</a>
+    <a href="https://drive.google.com/drive/folders/12Ku1B6Shgm7Z3tIo4uR_o72f1LvqM0AK" class="btn">📱 iOS App Development</a>
+    <a href="https://drive.google.com/drive/folders/1q-ifezxJl6uUskORjhzrwiOloPzjeVzm" class="btn">📊 Excel with AI</a>
+    <a href="https://drive.google.com/drive/folders/1eKK_5KCGkBrATbQWBuxexPBNCncvhtP1" class="btn">💡 ChatGPT for Developers</a>
+    <a href="https://drive.google.com/drive/folders/15xbR_FwwLRoCJUWGj8C2nMV6vWHH6fbx" class="btn">🤖 AI in Software Development</a>
+    <a href="https://drive.google.com/drive/folders/1ZWGEYN-qGhUwTSkis6dFoXZaKxbQ6Gfj" class="btn">🖥️ Complete Linux</a>
+    <a href="https://drive.google.com/drive/folders/1W2P07gaJw8D2wlBr4G4io5N_zbqD0R4m" class="btn">🎮 Gbob</a>
+    <a href="https://drive.google.com/drive/folders/1bua9U0TG6oaVB4VNeSlUCfEDte-fF_pB" class="btn">🎨 Complete Animation Course</a>
+    <a href="https://drive.google.com/drive/folders/19qnrDwJ0jXrWamJv2XbJmC_opfqmoVHb?usp=drive_link" class="btn">✍️ Blogging Course</a>
+    <a href="https://drive.google.com/drive/folders/1OJ-FdjOR8hRDftQ8TTXWEhCL5AFpSowc" class="btn">📈 Trading Mastery</a>
+    <a href="https://drive.google.com/drive/folders/1zOEuEEmfuEUJUbWhnGklZUnOEJMm-iK5" class="btn">🎥 Whiteboard Animation</a>
+    <a href="https://drive.google.com/drive/folders/1LBJoNen6GNAEMMA4GU-02IYIi2pA8VoD?usp=sharing" class="btn">📲 CapCut Viral Animation</a>
+    <a href="https://mega.nz/folder/6mYUCAqA#vETKMG_-37GQGcXWPcRjEA" class="btn">🎥 Content Creation</a>
+    <a href="https://drive.google.com/drive/folders/1y1pR7URzABeDXrXTd8zpdKHfYiF21Ifz" class="btn">📡 AutoTube Crew</a>
+    <a href="https://drive.google.com/drive/folders/1D-F8Xo2bRhNvIdp-DJTLrNPHFklfVnmq" class="btn">🎙️ Voice Cloning</a>
+    <a href="https://drive.google.com/drive/folders/1pjnCL1eqJRSI1FEVoQ7IE_Ue4dfuhcu1" class="btn">🛍️ Digital Product Selling</a>
+    <a href="https://drive.google.com/drive/folders/1NRCewj5kT3ZKEFLh2ACpg-UGRfdJhhXT" class="btn">🔒 Cybersecurity</a>
+    <a href="https://drive.google.com/drive/folders/1F5ER2sKKoxnplH3bM8x1apnkCuTIWfNI" class="btn">📚 IDM Paid Courses</a>
+    <a href="https://drive.google.com/drive/folders/18-NYLOQIesy7kA3WOkiq6Q78Sq2AijU-" class="btn">🖼️ Thumbnail Editing</a>
+    <a href="https://zgc7q-my.sharepoint.com/:f:/g/personal/dhruvrathi_zgc7q_onmicrosoft_com/Egv0tBlaOG9FvNAChgnqe0wB_l1lko9yXz8PkfO8Ry2ZQQ?e=g33bmE" class="btn">🌐 WordPress Courses</a>
+    <a href="https://drive.google.com/drive/folders/1tf9Oxsdbke1EZq6f2iJZOqUATu2B3FTw" class="btn">🔍 SEO</a>
+    <a href="https://drive.google.com/drive/folders/1dQRltpH80_57WqLGtkWuPFiPUJgsSIWv" class="btn">🎨 Graphic Design</a>
+    <a href="https://drive.google.com/drive/folders/1tijdP2w5fvwNJwcFMfZqWS1we5Emkq45" class="btn">✍️ Script Writing</a>
+    <a href="https://drive.google.com/drive/folders/1auxdqf9cUMPAEHpdWMUlxRYURyXiek0c" class="btn">🌐 WordPress</a>
+    <a href="https://drive.google.com/drive/folders/1mV8gKHoebanAvLsNxt81r8yibq5RKQra" class="btn">🛍️ Etsy SEO</a>
+    <a href="https://drive.google.com/drive/folders/1jQbriLAPI3zcESoVxus9WXsi309ZSWv6" class="btn">🗣️ Spoken English</a>
+    <a href="https://drive.google.com/drive/folders/1FlVo1DN9fw_tQriwJjWBe9JSiyVO-nC6" class="btn">📊 PowerPoint</a>
+    <a href="https://drive.google.com/drive/folders/1x7lQtFTotPrlcc0GZZyv2CwJzAMQUIGH" class="btn">🎬 Premiere Pro</a>
+    <a href="https://drive.google.com/drive/folders/1FIztrxLHppqBxLrNpQgczIQDAloRYjZx" class="btn">🎨 Adobe Illustrator</a>
+    <a href="https://drive.google.com/drive/folders/1o7ZA4RbG0jCFidtgXzCj9yoEQhUfeiQG" class="btn">💼 Upwork</a>
+    <a href="https://drive.google.com/drive/folders/1rFLlq99IwSOBpGTqhpqjrdyWcDJ4Aopr" class="btn">🎥 Blender</a>
+    <a href="https://drive.google.com/drive/folders/1cgRDit5RzYOpbMotvF-czp6XL1LY1Knc" class="btn">🖼️ Photoshop</a>
+    <a href="https://drive.google.com/drive/folders/11Na4X1XAu8Ak6KLqsu9jxnkV030On77U?usp=sharing" class="btn">🎬 CapCut</a>
+    <a href="https://drive.google.com/drive/folders/1yezsM__AiTiMGibxgH-8etpAOGCQbSRX" class="btn">📱 App Development</a>
+    <a href="https://drive.google.com/drive/folders/1pmpLzhkrxLpAPg9aX2L0qu8yztHk0Ayk" class="btn">🎥 3D Animation</a>
+    <a href="https://drive.google.com/drive/folders/14R7o83Y5cHz2ze5bSns7IJZTFjb94eri" class="btn">🤖 AI Video Creation</a>
+    <a href="https://drive.google.com/drive/folders/1ZAlPhRfU0RXHni0hAIYcGvKdlew3W8R3" class="btn">🔍 SEO</a>
+    <a href="https://drive.google.com/drive/folders/1GoRBGaYy6y1hLbfhiUbmwb29Y5CwBkdA" class="btn">💡 Prompt Engineer</a>
+    <a href="https://drive.google.com/drive/folders/1ACsGRwKD7mj_3IxevFhRMO8ZkYU-IP1u" class="btn">🎬 Video Editing</a>
+    <a href="https://drive.google.com/drive/folders/1t7Xbgu792bl7jGUmxBIq-66WC_uRNAyO" class="btn">🛍️ Shopify</a>
+    <a href="https://drive.google.com/drive/folders/16jBHUYvsUDW08NqAV06DlF18A_P2nzWQ" class="btn">🌐 WordPress</a>
+    <a href="https://mega.nz/folder/6W51gQrS#I0Dgj0aV7ovuY_vM_230O" class="btn">🎥 Content Creation</a>
+    <a href="https://drive.google.com/drive/folders/1_ZNMgmFpiyycizkEAKvXuEJo32zvmBFC?usp=sharing" class="btn">🎮 Create Game</a>
+    <a href="https://drive.google.com/drive/folders/1dMPqRIW5Lua4EeTvXuWsvn7u4Ud1Vc8z" class="btn">🌐 Web Development</a>
+        <a href="https://drive.google.com/drive/folders/12WqXc_HT0C1SImint4FTjbv8yMIQlDfx" class="btn">🤖 ChatGPT x Google Ads</a>
+        <a href="https://drive.google.com/drive/folders/1K7Q75Py5fo4szlAice2qNHU4AEWAxTC8?usp=drive_link" class="btn">💻 WordPress</a>
+        <a href="https://drive.google.com/drive/folders/1tijdP2w5fvwNJwcFMfZqWS1we5Emkq45" class="btn">✍️ Script Writing</a>
+        <a href="https://drive.google.com/file/d/1JcYSAI3lrOkBvJ3TueKV2EpF39Vv9eri/view?usp=drivesdk" class="btn">🎬 Mobile Video Editing</a>
+        <a href="https://drive.google.com/drive/folders/1m0Lbkj_5kGbgAxNWEmw2oIRONlXnly5B" class="btn">🎨 Designing</a>
+        <a href="https://drive.google.com/drive/folders/1C03dOfbJM97m5eBETjOGPSXLb2V3MMVY" class="btn">🎥 After Effects</a>
+        <a href="https://mega.nz/folder/vxUznQ7D#Bv5EVMFKsd-ZIqfypCQEXA" class="btn">👩‍💼 Virtual Assistant Courses</a>
+        <a href="https://mega.nz/folder/fsN3WQbL#gO6oe3z2h1DFMjLbz4B82g" class="btn">🛍️ Shopify Dropshipping</a>
+        <a href="https://mega.nz/folder/bp1WDKYD#DEy_7EgbtfDh-udLoQtD_g" class="btn">🌐 WordPress (Mega)</a>
+        <a href="https://mega.nz/folder/uwUhCCRR#Yet-bWYTCToIfhkgCum_8w" class="btn">📈 SEO</a>
+        <a href="https://mega.nz/folder/qo822SwT#xuWlsw7MHBNAjtmb5AF7XQ" class="btn">🎞️ Video Editing (Mega)</a>
+        <a href="https://mega.nz/folder/Tld1DSKb#PLZ5wnX0yoDjo04dX7afsg" class="btn">📱 iOS App Development</a>
+        <a href="https://mega.nz/folder/bo123ATb#6L16Tbc3z47O4KhsIXKkTQ" class="btn">🔎 Google Ads</a>
+        <a href="https://mega.nz/folder/jxMjSSpI#hCByLH9Q56fBkzWfc8m0dw" class="btn">📧 Email Marketing</a>
+        <a href="https://mega.nz/folder/WkMDxaRS#dOg35M0SSu530E6NpfTBoA" class="btn">📦 Daraz Sellers</a>
+        <a href="https://mega.nz/folder/zp1yyCqa#Me2EY_K3A2YPWShQ1QO4mg" class="btn">📝 Content Writing</a>
+        <a href="https://mega.nz/folder/q1FHUaQa#yMN2iefEwc-F4bUEBPLkOQ" class="btn">🤖 Android App Development</a>
+        <a href="https://drive.google.com/folderview?id=1DMAyUAmBylkE4ZemMbcHJYzNoD0WPgJD" class="btn">📣 Facebook Ads</a>
+        <a href="https://mega.nz/folder/ThcHSQiA#sg3hEaulJWAIzGbq39Vjlw" class="btn">🛒 Amazon Affiliate Marketing</a>
+        <a href="https://mega.nz/folder/q1M1VSaL#gUQh3V-6FPK6EzVAfX4F7Q" class="btn">🎨 3D Animation</a>
+        <a href="https://mega.nz/folder/j9si0TLZ#4Z_PVRs_lp-F6t9aCHp__w" class="btn">🛒 eBay</a>
+        <a href="https://mega.nz/folder/S4kiVCBZ#7M5uPKD-KdGt0mghEIFWWw" class="btn">📲 Instagram Marketing</a>
+        <a href="https://mega.nz/folder/C4VkAZ6R#U5xoymtNJv0uAoC0x72yLQ" class="btn">📺 YouTube Marketing</a>
+        <a href="https://mega.nz/folder/CwElWCba#T4kYRmEXTBE3_8NbO_OBc" class="btn">🎨 Graphic Designing V Course</a>
+        <a href="https://drive.google.com/drive/folders/1JkaO6ULP-JP_QgBnoqE5CmOoEk73f4XN" class="btn">🏢 Business</a>
+        <a href="https://drive.google.com/drive/folders/1VqxmYRMKhMpxWhobkhldAZesqksTaKfQ" class="btn">🎨 Canva</a>
+        <a href="https://mega.nz/folder/PpB1nLYQ#22f812_m3X73fH7OQdrA2A" class="btn">💼 Upwork</a>
+        <a href="https://drive.google.com/drive/folders/1oFvS4YGzWZKcUcuxcbVwFunCBP9g_4lr" class="btn">🖼️ Photoshop</a>
+        <a href="https://drive.google.com/drive/folders/1ShlW77zihkECx4KLL_XcN5cj25LMBRVK" class="btn">🎞️ Blender</a>
+        <a href="https://drive.google.com/drive/folders/1VavLvC_-dSqq1Ed-x9--D886drP4j2d4" class="btn">🎨 Designing (Drive)</a>
+        <a href="https://drive.google.com/drive/folders/1WociEbMed5m6oChRchUmjq-OU5xn1IIM" class="btn">💼 Upwork (Drive)</a>
+        <a href="https://drive.google.com/drive/folders/1JJ2gzX93dUbg3O65Im6oyOG86G6zg6_Y" class="btn">💹 Pollinate Trading</a>
+        <a href="https://drive.google.com/drive/folders/1ATnE9UCyTedd3uzBtK1XcyFSY5HOSEZa" class="btn">🤖 Machine Learning</a>
+        
+        
+
+        <a href="https://drive.google.com/drive/folders/1-9sI2YBD3uTUyorgBbuDiSoP7_OHx9Ll?usp=sharing" class="btn">🎬 TikTok Video Editing</a>
+        <a href="https://drive.google.com/drive/folders/1bZSD3KFSm9DafdLBUTuZ8vLmikQUkQIc?usp=sharing" class="btn">📦 Drop Shipping</a>
+        <a href="https://drive.google.com/drive/folders/1siOJT7b2f5Guuu9GvBkSkExBr7PaxZSL" class="btn">⏳ Time Management</a>
+        <a href="https://drive.google.com/drive/folders/1-sh6nhsDjbDIl89eRMsQ4-hGc36gY2d9" class="btn">📢 Facebook Ads</a>
+        <a href="https://drive.google.com/drive/folders/1aSJgHcFfCrXJknGpUOZjkUCsFYoOVcrS" class="btn">👾 Stick Figure Animation</a>
+        <a href="https://drive.google.com/drive/folders/1OlJ4IsTF2F_-E_i8uqMuM6_7PIN9QDVt" class="btn">💹 Trading</a>
+        <a href="https://drive.google.com/drive/folders/1tHawfwdgi6BMy54FdqmsaX4fGfq-itxl" class="btn">📣 Facebook / Instagram / Twitter / TikTok Ads</a>
+        <a href="https://drive.google.com/drive/folders/1Xa6jXosD9Tm8yiJCHmIGtWKtxiGxl3lG" class="btn">🤖 AI Agent Building / Creation / Chatbot</a>
+        <a href="https://drive.google.com/drive/folders/11N1szgnseeXwnb9gP8EEZdUUl4EBr4wj?usp=sharing" class="btn">👨‍💻 Naveed Iqbal AI</a>
+        <a href="https://drive.google.com/drive/folders/1NczxCp_BfDwqQZTxAN8zsBhPJdIhrKBV?usp=sharing" class="btn">✨ After Effects</a>
+        <a href="https://drive.google.com/drive/folders/1FGlNWbkIpwcRMpkIK7VWaMaeKk_iBaa7?usp=sharing" class="btn">🎞️ Video Editing</a>
+        <a href="https://drive.google.com/drive/folders/1xQ7cRRU6pcHpVsj--uzni5Rc2acFE_rn" class="btn">🎨 3D Animation</a>
+        <a href="https://drive.google.com/drive/folders/1RXo24r0zZuTqitWbLW7xDkf1TwFU24OJ" class="btn">🗺️ Map Animation</a>
+        <a href="https://drive.google.com/drive/folders/1UM3cF7HKioaOtRIMNgalyJ8Qj7N3id9x" class="btn">✍️ Blogging with AI</a>
+        <a href="https://drive.google.com/drive/folders/1kNI7ogk-o5Cs2Tpsl3iwkE-lw59fEnUR" class="btn">✂️ Editing</a>
+        <a href="https://drive.google.com/drive/folders/1dXjvvd4mYkrchsgYeYCITnaInI8rZSgh" class="btn">💡 With AI</a>
+        <a href="https://drive.google.com/drive/folders/1s_ARUpM8QYTn5HJRHezg7LMwgj2-nFAW" class="btn">📊 Excel</a>
+        <a href="https://drive.google.com/drive/folders/1ulLxIhXGcSvR1OZoRSx51ZYevcPg2nA4" class="btn">🏗️ AutoCAD</a>
+        <a href="https://drive.google.com/drive/folders/1Swdw3bDVC9CDl_77aAtho7yM6iofbnNy" class="btn">🖌️ Photoshop</a>
+        <a href="https://drive.google.com/drive/folders/1-BNAip19zR7UKln47JVQYJc455Ua1meW" class="btn">📈 Google Ads</a>
+        <a href="https://drive.google.com/drive/folders/1UKvet_DQ10hmK7mxOO50Y4XtDwKgeY-2p" class="btn">⚙️ AI Agent Creation</a>
+        <a href="https://drive.google.com/drive/folders/1dZo4sNg6BZ8OFbOaRI594ypkjgTU2dxG" class="btn">💬 Learn ChatGPT</a>
+        <a href="https://drive.google.com/drive/folders/1I9RbFLOfbVXL1gV5b4U7gsQTUVAp-ZEP" class="btn">📊 MS PowerPoint</a>
+        <a href="https://drive.google.com/drive/folders/1xM6GjovFGLKtTBtzmuZ9-fNUnA3OrMPU" class="btn">🐍 Python</a>
+        <a href="https://drive.google.com/drive/folders/1KCBybDyGbyW579o2wMtyFDdJaNUsTb6fo" class="btn">🤖 Chatbot Development</a>
+        <a href="https://drive.google.com/drive/folders/1Zmx8O6cgzUFhWb8ImFCHPIErtbnn6jpc" class="btn">🎬 Adobe Premiere Pro</a>
+        <a href="https://drive.google.com/drive/folders/1hAXLV759-T4VrpFut0fFdtxzZV6IEUgc" class="btn">🌐 Web Hosting Management</a>
+        <a href="https://drive.google.com/drive/folders/1vjN2uXn8yVA7cEOBRlEmwRyuJiOfsc6o" class="btn">💡 ChatGPT Learning</a>
+        <a href="https://drive.google.com/drive/folders/1z2SPWK3SozfivXP0w1BFFeEsVKBIP-CZ" class="btn">📱 App Development</a>
+        <a href="https://drive.google.com/drive/folders/1v-4pjHiG3KgyhDU-5AdPzbTudZ59SOt2" class="btn">🏢 Brand Development</a>
+        <a href="https://drive.google.com/drive/folders/1LU2wGyzcefmNJ0mUZo-HT-rX6iyu8Cuk" class="btn">🎙️ AI Voice like Human</a>
+        <a href="https://drive.google.com/drive/folders/1tXN9nYa6B3JIxge3ZWKCnQIo96lSR8tL" class="btn">🚀 Python for SEO / Content Marketing</a>
+        <a href="https://drive.google.com/drive/folders/1zCZVlVuck9IaLBk9Oepqhec5fBr9a92d" class="btn">🐍 Python</a>
+        <a href="https://drive.google.com/drive/folders/1UdzPpDhZ9ZiVD9Hgt5Trno7etzYGUZc6" class="btn">🎥 Mobile Video Editing</a>
+        <a href="https://drive.google.com/drive/folders/1fZ92-T8S-2BPG_prbLqIMmG9zs3vkd3r" class="btn">🎞️ Camtasia Video Editing</a>
+        <a href="https://drive.google.com/drive/folders/1WiG-W1CYYEJuFDG_IF2MTfIJXG_scDZh" class="btn">🎨 Photoshop Editing</a>
+        <a href="https://drive.google.com/drive/folders/12LXtiC4zIe_jsXhta0rq37Zab2Y5P4ao" class="btn">🖌️ Canva</a>
+        <a href="https://drive.google.com/drive/folders/1G5i40KToPgP3XejFkOqdQLbpuTGyasIo" class="btn">🎞️ Text to Videos Creation</a>
+        <a href="https://drive.google.com/drive/folders/1FSIYYDmSR-1erwjxtGyp7WA9jSTFpDXf" class="btn">🎨 3D Animation</a>
+        <a href="https://drive.google.com/drive/folders/1tExgRG5Wp4GlJhfhSHcOPUN20zgbEXop" class="btn">🛠️ Bit Development</a>
+        <a href="https://drive.google.com/drive/folders/1rX8gliFBqfiQ9BEgMoGAsISBxh83Bjd9" class="btn">🐍 Python</a>
+        <a href="https://drive.google.com/drive/folders/1kC5rCVa74kQ3soFgJOm2h0C3fL_nSmaB" class="btn">💻 Software Development</a>
+        <a href="https://drive.google.com/drive/folders/1snYl61gRkU0DGSHOZCWaKx-f4497Ji0M" class="btn">📊 Meta Ads</a>
+        <a href="https://drive.google.com/drive/folders/1pg1_crDRzv81GNxPASwUtUHDCVzuV4d2" class="btn">💼 Digital Marketing</a>
+        <a href="https://drive.google.com/drive/folders/17KmWqj5yxhc74O_EGbvaBrUcU30U-qtX" class="btn">🎞️ Video Editing</a>
+        <a href="https://drive.google.com/drive/folders/19zUzLTROLH4UZqxpdthq1ctxoTZRlLHK" class="btn">🤖 AI Agent Development</a>
+        <a href="https://drive.google.com/drive/folders/1MKAHX4OP6w-alzSz9JL01JaeZ6G9w16W" class="btn">🎬 Capcut Editing</a>
+        <a href="https://drive.google.com/drive/folders/1GVQrcB2Ry5ULz5dTB62Ju8dNEnPfzRNR" class="btn">📊 Pollinate Trading</a>
+
+        
+        
+  <div class="footer">
+    &copy; 2025 Spidey Toolkit- Powered by NAIN 💜
+  </div>
+</div>
+
+<script>
+  const canvas = document.getElementById("bg");
+  const ctx = canvas.getContext("2d");
+
+  canvas.height = window.innerHeight;
+  canvas.width = window.innerWidth;
+
+  const matrix = "01";
+  const fontSize = 16;
+  const columns = canvas.width / fontSize;
+  const drops = Array.from({ length: columns }).fill(1);
+
+  function draw() {
+    ctx.fillStyle = "rgba(0, 0, 0, 0.07)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    ctx.fillStyle = "#d66efd";
+    ctx.font = fontSize + "px monospace";
+
+    for (let i = 0; i < drops.length; i++) {
+      const text = matrix[Math.floor(Math.random() * matrix.length)];
+      ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+      if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+        drops[i] = 0;
+      }
+      drops[i]++;
+    }
+  }
+
+  setInterval(draw, 35);
+
+  window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAIN TOOLKIT - GLOW EDITION</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #0a0a0a;
+            overflow-y: auto;
+            color: #fff;
+            min-height: 100vh;
+        }
+        
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 450px;
+            margin: 70px auto;
+            background: rgba(0, 0, 0, 0.85);
+            border: 2px solid #d66efd;
+            border-radius: 18px;
+            padding: 30px 25px;
+            box-shadow: 0 0 40px #d66efd;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                transform: translateY(-40px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        h1 {
+            color: #d66efd;
+            font-size: 32px;
+            text-shadow: 0 0 10px #d66efd, 0 0 20px #d66efd;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 15px;
+            color: #ccc;
+            margin-bottom: 25px;
+        }
+        
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 10px 0;
+            padding: 14px 20px;
+            border: 2px solid #d66efd;
+            background: transparent;
+            color: #d66efd;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px transparent;
+        }
+        
+        .btn:hover {
+            background: linear-gradient(to right, #8000ff, #d66efd);
+            color: #fff;
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #d66efd;
+        }
+        
+        .btn i {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            margin-top: 25px;
+        }
+    </style>
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <canvas id="bg"></canvas>
+
+    <div class="container">
+        <h1> SPIDEY TOOLKIT</h1>
+        <div class="subtitle">Welcome to the SPIDEY Premium Courses Toolkit</div>
+
+        <a href="https://drive.google.com/drive/folders/18nObwwexs65c0E-09YQy9C9psPNyJB5R?usp=sharing" class="btn">💼 Faiz SMC Trading</a>
+        <a href="https://drive.google.com/drive/folders/1c5UxpQdr0o9Yygb9Glj7a7Mi5MUpZ8oG?usp=drive_link" class="btn">📝 Blogging by Being Guru</a>
+        <a href="https://drive.google.com/drive/folders/1TiK02cx0lhwy42mA8J5w8O1Eo7EtTrxR" class="btn">📊 Badar Forex Trading</a>
+        <a href="https://drive.google.com/drive/folders/1cVMWmnPVRhAD-hWCPaow72I2YaaF6lJu" class="btn">📈 Waqar Zaqa Trading</a>
+        <a href="https://drive.google.com/drive/folders/1JCTeGEXLSlww-02ryF8cTCJ4o9zwPUyX" class="btn">🛒 E-commerce by Luqman</a>
+        <a href="https://drive.google.com/drive/folders/103-HPJZrtSJbGsXAAfgwCAVe94u2DTN6?usp=drive_link" class="btn">📱 SMM by Yashika</a>
+        <a href="https://drive.google.com/drive/folders/1auxdqf9cUMPAEHpdWMUlxRYURyXiek0c" class="btn">🌐 WordPress by Hamza</a>
+        <a href="https://drive.google.com/drive/folders/17aZfQSe1Jm_Xgk6TU9w-_XJehCgv_4Hu" class="btn">🖥️ Soban Tariq Fiverr</a>
+        <a href="https://drive.google.com/drive/folders/1ogs8KbeVDRG__R_0ofCve6RqQsZhjlzQ" class="btn">📺 Imran Zyan YouTube</a>
+        <a href="https://drive.google.com/drive/folders/1U4c824OmTioUpcz_ODGbr-c_OCk4oQqe" class="btn">💸 P4 Provider Crypto</a>
+        <a href="https://drive.google.com/drive/folders/1qpS9hWZObUKA-AaqKYINClc9aNOEMe34" class="btn">💹 Sunil Minglani Trading</a>
+        <a href="https://drive.google.com/drive/folders/1QA2fSi1wD40kvwgtHv48pEoowH9wss3V" class="btn">🎥 Nomi YouTube Masterclasses</a>
+        <a href="https://drive.google.com/drive/folders/1p5cbPP_mZwSNvuJ2ON5Nl3UplKcY7UmO?usp=drive_link" class="btn">💼 Raheem Dawar Upwork</a>
+        <a href="https://drive.google.com/drive/folders/1rF3S2Bk3PFrQXDCgEgMIh4Wp3b8B8Lkk" class="btn">🖼️ Thumbnail by Abhishek</a>
+        <a href="https://drive.google.com/drive/folders/1ByB5BqQ9jwAKK-4RbcqEC5bRvSujWEE-" class="btn">📰 Blogging by Ghulam Ali</a>
+        <a href="https://drive.google.com/drive/folders/1seDXuT0ZpCDsZSG0tinzXGannN1PxFqq" class="btn">🎯 Rajeev Paid Courses</a>
+        <a href="https://drive.google.com/drive/folders/12Bb7iiq-HyDD60H1TFsX3i1qZpLvmqye" class="btn">📚 Zeshan Usmani Paid Courses</a>
+        <a href="https://drive.google.com/drive/folders/1bBO2IiLycMk2chpLLHLWDQwlT5RW_cMR" class="btn">📖 Bilal Edu Paid Courses</a>
+        <a href="https://drive.google.com/drive/folders/1rlKXdWsDZIsv8t7JSINRe6RpVkqsPltQ" class="btn">📖 Shahid Anwar All Courses</a>
+        <a href="https://drive.google.com/drive/folders/1rogoA0HLWNdKE6YYMa9HvlhNs8CdaLRS" class="btn">🎓 Hamza AL Paid Courses</a>
+        <a href="https://drive.google.com/drive/folders/1YWXo8TDBKAArt7DKen1ZsicC3LyixPPU" class="btn">🤖 AI Automation by Andrew Tate</a>
+        <a href="https://drive.google.com/drive/folders/1DeBqn9x0hyCu8szN0gmLld175L1w6y8h" class="btn">📢 Mr. How Digital Marketing</a>
+        <a href="https://drive.google.com/drive/folders/1SmDGEC89we2bP9I5IaemaXl2yE2X44eX" class="btn">🎯 Umar Tazkerr Google Ads</a>
+        <a href="https://drive.google.com/drive/folders/1l84FmG3ZKhbfUJrg3KJggOI8xVlSCMq3" class="btn">🧑‍💻 Dhruv Rathe AI Course</a>
+        <a href="https://drive.google.com/drive/folders/1aaskB_q_GenB3i7Rty1K3A8RLJXxv-Hv" class="btn">🤖 AI Master Class</a>
+        <a href="https://drive.google.com/drive/folders/19l41kl2GwyC35LAGBbSdSAIb7o8ZFAs0" class="btn">💼 Iman Ghadzi Course</a>
+        <a href="https://drive.google.com/drive/folders/1A2a7ig-LuZvinO5CezF_ZsFGxGH9lE9M" class="btn">🛒 Andrew Tate Amazon / Shopify / Daraz / Ecommerce / Crypto Trading</a>
+        <a href="https://drive.google.com/drive/folders/1MrLRBDh1u7ched1CDDADY85Apeafz2Cu" class="btn">🎥 YouTube by Dhruv Rathe</a>
+        <a href="https://drive.google.com/drive/folders/16jBHUYvsUDW08NqAV06DlF18A_P2nzWQ" class="btn">🌐 WordPress by Sadam</a>
+        <a href="https://drive.google.com/drive/folders/1JT6504E_J3Jggcbp53mvSkxeFjyyj6lc" class="btn">🤖 YouTube Automation by Saad</a>
+        <a href="https://drive.google.com/drive/folders/1pkY4GEFCBFf-OHygZcg8UWmmvw5S_v8q" class="btn">🛍️ E-commerce by Ali Swati</a>
+        <a href="https://drive.google.com/drive/folders/1qKl3Hi4dVoxGJ-gm1za3xEFvpLvLRZjL" class="btn">🏢 Iman Ghadzi Agency</a>
+        <a href="https://youtube.com/playlist?list=PLu3W61P0O4TMYeh_3uEflfqyyzgzvGe85&feature=shared" class="btn">📚 Mustafa Ahmad Paid Courses</a>
+        <a href="https://drive.google.com/drive/folders/1899uq6q9qXNVrb4dHHc_j3jJdREOh9v1" class="btn">🤖 Dhruv Rathe AI Master Class</a>
+
+        <div class="footer">
+            &copy; 2025 Spidey Toolkit- Powered by NAIN 💜
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById("bg");
+        const ctx = canvas.getContext("2d");
+
+        canvas.height = window.innerHeight;
+        canvas.width = window.innerWidth;
+
+        const matrix = "01";
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+        const drops = Array.from({
+            length: columns
+        }).fill(1);
+
+        function draw() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.07)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = "#d66efd";
+            ctx.font = fontSize + "px monospace";
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = matrix[Math.floor(Math.random() * matrix.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+
+        setInterval(draw, 35);
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+
+</body>
+
+</html>
